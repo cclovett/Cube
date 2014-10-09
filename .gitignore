@@ -8,3 +8,5 @@ contents.xcworkspacedata
 *.xccheckout
 
 *.xcscheme
+
+/**/Demo/**/Pods/*

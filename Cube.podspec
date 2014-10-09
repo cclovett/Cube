@@ -135,7 +135,7 @@ Pod::Spec.new do |s|
 
   s.subspec "one" do |ss|
     ss.author   = { "fhr" => "fenghaoran@camera360.com" }
-    ss.source_files  = "Cubes/one/Classes/**/*.{h,m,mm,cpp,c}"
+    ss.source_files  = "Cubes/one/Classes/**/*.{h,m,mm,cpp,c}","Cubes/one/Sample/**/*"
 
   end
 end
