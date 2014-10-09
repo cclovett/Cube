@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.subspec "one" do |ss|
-    sp.author   = { "fhr" => "fenghaoran@camera360.com" }
+
     sp.source_files  = "Cubes/one/Classes/**/*.{h,m,mm,cpp,c}"
 
   end
