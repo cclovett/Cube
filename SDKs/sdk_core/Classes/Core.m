@@ -7,7 +7,18 @@
 //
 
 #import "Core.h"
+#import <Entity1.h>
 
 @implementation Core
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        Entity1 *t = [Entity1 new];
+        t = nil;
+    }
+    return self;
+}
 
 @end

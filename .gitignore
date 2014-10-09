@@ -10,3 +10,5 @@ contents.xcworkspacedata
 *.xcscheme
 
 /**/demo/**/Pods/*
+
+Breakpoints_v2.xcbkptlist
