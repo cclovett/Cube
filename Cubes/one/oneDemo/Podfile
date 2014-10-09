@@ -1,0 +1,1 @@
+pod 'Cube/one', :git => 'git@github.com:cclovett/Cube.git'
