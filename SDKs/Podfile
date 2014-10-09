@@ -1,0 +1,3 @@
+platform :ios, '5.1'
+xcodeproj 'sdk_resource/Demo/demo/sdk_resource_demo.xcodeproj'
+xcodeproj 'sdk_common/Demo/src/sdk_common.xcodeproj'

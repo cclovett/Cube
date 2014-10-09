@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char sdk_resourceVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <sdk_resource/PublicHeader.h>
 
-
+#import <sdk_resource/RsCoreDataManager.h>
+#import <sdk_resource/Entity1.h>

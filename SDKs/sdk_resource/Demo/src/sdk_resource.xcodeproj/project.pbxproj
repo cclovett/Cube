@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		4248C03119E634C9004E96CA /* sdk_resource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4248C03019E634C9004E96CA /* sdk_resource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4248C03B19E634CA004E96CA /* sdk_resourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4248C03A19E634CA004E96CA /* sdk_resourceTests.m */; };
-		426CA55C19E658E2009EDF19 /* Entity1.h in Headers */ = {isa = PBXBuildFile; fileRef = 426CA55819E658E2009EDF19 /* Entity1.h */; };
+		426CA55C19E658E2009EDF19 /* Entity1.h in Headers */ = {isa = PBXBuildFile; fileRef = 426CA55819E658E2009EDF19 /* Entity1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		426CA55D19E658E2009EDF19 /* Entity1.m in Sources */ = {isa = PBXBuildFile; fileRef = 426CA55919E658E2009EDF19 /* Entity1.m */; };
 		426CA55E19E658E2009EDF19 /* SDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 426CA55A19E658E2009EDF19 /* SDK.xcdatamodeld */; };
-		426CA59719E65D91009EDF19 /* RsCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 426CA59519E65D91009EDF19 /* RsCoreDataManager.h */; };
+		426CA59719E65D91009EDF19 /* RsCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 426CA59519E65D91009EDF19 /* RsCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		426CA59819E65D91009EDF19 /* RsCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 426CA59619E65D91009EDF19 /* RsCoreDataManager.m */; };
 /* End PBXBuildFile section */
 
@@ -162,9 +162,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				426CA55C19E658E2009EDF19 /* Entity1.h in Headers */,
 				426CA59719E65D91009EDF19 /* RsCoreDataManager.h in Headers */,
 				4248C03119E634C9004E96CA /* sdk_resource.h in Headers */,
-				426CA55C19E658E2009EDF19 /* Entity1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import "Core.h"
-#import <Entity1.h>
+//#import <RsCoreDataManager.h>
+#import <sdk_resource/RsCoreDataManager.h>
 
 @implementation Core
 
@@ -15,8 +16,8 @@
 {
     self = [super init];
     if (self) {
-        Entity1 *t = [Entity1 new];
-        t = nil;
+        id ss = [RsCoreDataManager newContext];
+        ss = nil;
     }
     return self;
 }
