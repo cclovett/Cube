@@ -6,17 +6,26 @@
 //  Copyright (c) 2015年 PinguoSDK. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CCMainViewController.h"
+#import "CCMainTableView.h"
+#import "CCMainEntity.h"
 
-@interface ViewController ()
+@interface CCMainViewController ()
+
+@property (nonatomic,weak) IBOutlet CCMainTableView *mTableView;
 
 @end
 
-@implementation ViewController
+@implementation CCMainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSArray *arr = @[];
+    
+    [self.mTableView pLoadEntities:arr];
 }
 
 - (void)didReceiveMemoryWarning {
