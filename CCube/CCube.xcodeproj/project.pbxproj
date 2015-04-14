@@ -15,7 +15,9 @@
 		4266777D1ADCDA3600F1289A /* CCubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266777C1ADCDA3600F1289A /* CCubeTests.m */; };
 		426677901ADCDCF700F1289A /* CCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266778B1ADCDCF700F1289A /* CCMainViewController.m */; };
 		426677911ADCDCF700F1289A /* CCMainTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4266778F1ADCDCF700F1289A /* CCMainTableView.m */; };
-		426677941ADCDEAF00F1289A /* CCMainEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677931ADCDEAF00F1289A /* CCMainEntity.m */; };
+		426677941ADCDEAF00F1289A /* CCEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677931ADCDEAF00F1289A /* CCEntity.m */; };
+		426677971ADCE02400F1289A /* CCMainEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677961ADCE02400F1289A /* CCMainEntity.m */; };
+		4266779A1ADCE0D800F1289A /* CCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677991ADCE0D800F1289A /* CCDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,12 @@
 		4266778B1ADCDCF700F1289A /* CCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainViewController.m; sourceTree = "<group>"; };
 		4266778E1ADCDCF700F1289A /* CCMainTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainTableView.h; sourceTree = "<group>"; };
 		4266778F1ADCDCF700F1289A /* CCMainTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTableView.m; sourceTree = "<group>"; };
-		426677921ADCDEAF00F1289A /* CCMainEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainEntity.h; sourceTree = "<group>"; };
-		426677931ADCDEAF00F1289A /* CCMainEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainEntity.m; sourceTree = "<group>"; };
+		426677921ADCDEAF00F1289A /* CCEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCEntity.h; sourceTree = "<group>"; };
+		426677931ADCDEAF00F1289A /* CCEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCEntity.m; sourceTree = "<group>"; };
+		426677951ADCE02400F1289A /* CCMainEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainEntity.h; sourceTree = "<group>"; };
+		426677961ADCE02400F1289A /* CCMainEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainEntity.m; sourceTree = "<group>"; };
+		426677981ADCE0D800F1289A /* CCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDrawViewController.h; sourceTree = "<group>"; };
+		426677991ADCE0D800F1289A /* CCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,8 @@
 			children = (
 				4266778A1ADCDCF700F1289A /* CCMainViewController.h */,
 				4266778B1ADCDCF700F1289A /* CCMainViewController.m */,
+				426677981ADCE0D800F1289A /* CCDrawViewController.h */,
+				426677991ADCE0D800F1289A /* CCDrawViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,8 +154,10 @@
 		4266778C1ADCDCF700F1289A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				426677921ADCDEAF00F1289A /* CCMainEntity.h */,
-				426677931ADCDEAF00F1289A /* CCMainEntity.m */,
+				426677921ADCDEAF00F1289A /* CCEntity.h */,
+				426677931ADCDEAF00F1289A /* CCEntity.m */,
+				426677951ADCE02400F1289A /* CCMainEntity.h */,
+				426677961ADCE02400F1289A /* CCMainEntity.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -261,11 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426677941ADCDEAF00F1289A /* CCMainEntity.m in Sources */,
+				426677941ADCDEAF00F1289A /* CCEntity.m in Sources */,
+				426677971ADCE02400F1289A /* CCMainEntity.m in Sources */,
 				426677901ADCDCF700F1289A /* CCMainViewController.m in Sources */,
 				426677911ADCDCF700F1289A /* CCMainTableView.m in Sources */,
 				426677661ADCDA3600F1289A /* AppDelegate.m in Sources */,
 				426677631ADCDA3600F1289A /* main.m in Sources */,
+				4266779A1ADCE0D800F1289A /* CCDrawViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,13 @@
 //
-//  CCMainEntity.m
+//  CCEntity.h
 //  CCube
 //
 //  Created by Cc on 15/4/14.
 //  Copyright (c) 2015年 PinguoSDK. All rights reserved.
 //
 
-#import "CCMainEntity.h"
+#import <Foundation/Foundation.h>
 
-@implementation CCMainEntity
+@interface CCEntity : NSObject <NSCopying>
 
 @end

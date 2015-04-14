@@ -9,6 +9,7 @@
 #import "CCMainViewController.h"
 #import "CCMainTableView.h"
 #import "CCMainEntity.h"
+#import "CCDrawViewController.h"
 
 @interface CCMainViewController ()
 
@@ -22,8 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
-    NSArray *arr = @[];
+    CCMainEntity *drawEntity = [[CCMainEntity alloc] init];
+    {
+        drawEntity.mStrKey = @"CCDraw";
+    }
+    NSArray *arr = @[drawEntity];
     
     [self.mTableView pLoadEntities:arr];
 }
