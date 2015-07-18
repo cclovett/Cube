@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <pg_edit_sdk_api/pg_edit_sdk_api.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [pg_edit_sdk_api_controller sStart:@""];
     return YES;
 }
 

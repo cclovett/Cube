@@ -1,0 +1,42 @@
+PODS:
+  - opencv2 (0.0.39)
+  - pg_edit_sdk_api (0.0.95):
+    - pg_edit_sdk_cdb_piratesdk
+    - pg_edit_sdk_core
+  - pg_edit_sdk_cdb_piratesdk (0.0.91):
+    - pg_edit_sdk_common
+  - pg_edit_sdk_common (0.0.92)
+  - pg_edit_sdk_core (0.0.89):
+    - pg_edit_sdk_common
+  - pg_edit_sdk_resource/SelfieCamera (0.0.3)
+  - PGS-PhotoEditing (0.0.45):
+    - PGS-PinguoImage
+    - UMengAnalytics (= 3.5.8)
+  - PGS-PinguoImage (0.2.57):
+    - PGS-PinguoImage/Default (= 0.2.57)
+  - PGS-PinguoImage/Assets (0.2.57)
+  - PGS-PinguoImage/Default (0.2.57):
+    - opencv2
+    - PGS-PinguoImage/Assets
+  - UMengAnalytics (3.5.8)
+
+DEPENDENCIES:
+  - pg_edit_sdk_api
+  - pg_edit_sdk_cdb_piratesdk
+  - pg_edit_sdk_common
+  - pg_edit_sdk_core
+  - pg_edit_sdk_resource/SelfieCamera
+  - PGS-PhotoEditing
+
+SPEC CHECKSUMS:
+  opencv2: 8ca82d8a04262ad6ea0cd5ee260d8247748908c1
+  pg_edit_sdk_api: df105e57fb0ee517fd43732fed85649c83e1528c
+  pg_edit_sdk_cdb_piratesdk: 4e728ca64699e53c3fc8b7eb4eab76013488d4ac
+  pg_edit_sdk_common: 54d232ae76c8f811827b22bd320e98bb6abfa316
+  pg_edit_sdk_core: c351ddad827f98cd379e305d15a77ce88a5a51a9
+  pg_edit_sdk_resource: 80970ae57cd576414bf653427ebe68fdae7800fb
+  PGS-PhotoEditing: 721b884875c1e4d5a77c0bb10d36b05e5c089ddf
+  PGS-PinguoImage: 4760bedfb87229b7ba585c63dde7b22a56da848f
+  UMengAnalytics: 020551718ba37da017bd85ac4c38ffba2774f3ce
+
+COCOAPODS: 0.37.2

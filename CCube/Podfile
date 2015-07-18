@@ -1,0 +1,27 @@
+source 'https://github.com/CocoaPods/Specs'
+source 'ssh://git@192.168.1.33:7999/pglib/pglibspecs.git'
+source 'git@192.168.1.33:HSpecs'
+
+target :CCube, :exclusive => true do
+    platform :ios, '7.0'
+    inhibit_all_warnings!
+    xcodeproj 'CCube.xcodeproj'
+    link_with 'CCube'
+    
+    # /**
+    #  *    本地路径 调试专用
+    #  */
+#    wirelessSDKLocalPath = "/Volumes/WoRk/GitHub/Wireless-Super-SDK/iOS/Source/" #Debug for Cc
+#    wirelessSDKLocalPath = "/Volumes/WoRk/GitHub/Wireless-Super-SDK/iOS/Source/" #Debug for qx
+
+    # --------  SDK --------
+    pod 'pg_edit_sdk_api'              #, :path => "#{wirelessSDKLocalPath}pg_edit_sdk_api/pg_edit_sdk_api.podspec"
+    pod 'pg_edit_sdk_core'             #, :path => "#{wirelessSDKLocalPath}pg_edit_sdk_core/pg_edit_sdk_core.podspec"
+    pod 'pg_edit_sdk_common'           #, :path => "#{wirelessSDKLocalPath}pg_edit_sdk_common/pg_edit_sdk_common.podspec"
+    pod 'pg_edit_sdk_cdb_piratesdk'    #, :path => "#{wirelessSDKLocalPath}pg_edit_sdk_cdb_piratesdk/pg_edit_sdk_cdb_piratesdk.podspec"
+    pod 'pg_edit_sdk_resource/SelfieCamera'
+    # --------  SDK --------
+    
+    pod 'PGS-PhotoEditing'
+
+end

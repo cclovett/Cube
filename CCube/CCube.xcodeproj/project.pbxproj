@@ -18,6 +18,7 @@
 		426677941ADCDEAF00F1289A /* CCEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677931ADCDEAF00F1289A /* CCEntity.m */; };
 		426677971ADCE02400F1289A /* CCMainEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677961ADCE02400F1289A /* CCMainEntity.m */; };
 		4266779A1ADCE0D800F1289A /* CCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426677991ADCE0D800F1289A /* CCDrawViewController.m */; };
+		AB4AC445E086F056A9918245 /* libPods-CCube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B05164F13CB656AF9FF3ECF3 /* libPods-CCube.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BF3117DE2EB51B1ACD6694D /* Pods-CCube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCube/Pods-CCube.debug.xcconfig"; sourceTree = "<group>"; };
+		425A23F31B5A1E7C006F0896 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		425A23F51B5A1EAB006F0896 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		4266775D1ADCDA3600F1289A /* CCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		426677611ADCDA3600F1289A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		426677621ADCDA3600F1289A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		426677961ADCE02400F1289A /* CCMainEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainEntity.m; sourceTree = "<group>"; };
 		426677981ADCE0D800F1289A /* CCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCDrawViewController.h; sourceTree = "<group>"; };
 		426677991ADCE0D800F1289A /* CCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCDrawViewController.m; sourceTree = "<group>"; };
+		5D1E40D0E1C348A6CC9FA055 /* Pods-CCube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCube.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCube/Pods-CCube.release.xcconfig"; sourceTree = "<group>"; };
+		B05164F13CB656AF9FF3ECF3 /* libPods-CCube.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCube.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4AC445E086F056A9918245 /* libPods-CCube.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		305E47FC75535E4EC50E9A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				425A23F51B5A1EAB006F0896 /* Accelerate.framework */,
+				425A23F31B5A1E7C006F0896 /* AVFoundation.framework */,
+				B05164F13CB656AF9FF3ECF3 /* libPods-CCube.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		426677541ADCDA3600F1289A = {
 			isa = PBXGroup;
 			children = (
 				4266775F1ADCDA3600F1289A /* CCube */,
 				426677791ADCDA3600F1289A /* CCubeTests */,
 				4266775E1ADCDA3600F1289A /* Products */,
+				DA298C1E9300F0B1F74DF2A9 /* Pods */,
+				305E47FC75535E4EC50E9A40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +190,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA298C1E9300F0B1F74DF2A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3117DE2EB51B1ACD6694D /* Pods-CCube.debug.xcconfig */,
+				5D1E40D0E1C348A6CC9FA055 /* Pods-CCube.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 426677801ADCDA3600F1289A /* Build configuration list for PBXNativeTarget "CCube" */;
 			buildPhases = (
+				2D8BAB4F454CC6E1857332E5 /* Check Pods Manifest.lock */,
 				426677591ADCDA3600F1289A /* Sources */,
 				4266775A1ADCDA3600F1289A /* Frameworks */,
 				4266775B1ADCDA3600F1289A /* Resources */,
+				192549F8AFAD0748922D029E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +295,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192549F8AFAD0748922D029E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCube/Pods-CCube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8BAB4F454CC6E1857332E5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		426677591ADCDA3600F1289A /* Sources */ = {
@@ -403,6 +466,7 @@
 		};
 		426677811ADCDA3600F1289A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BF3117DE2EB51B1ACD6694D /* Pods-CCube.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CCube/Info.plist;
@@ -414,6 +478,7 @@
 		};
 		426677821ADCDA3600F1289A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1E40D0E1C348A6CC9FA055 /* Pods-CCube.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CCube/Info.plist;
@@ -476,6 +541,7 @@
 				426677821ADCDA3600F1289A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		426677831ADCDA3600F1289A /* Build configuration list for PBXNativeTarget "CCubeTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +550,7 @@
 				426677851ADCDA3600F1289A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
